@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Period days:</strong>
+  <%= @state.period_days %>
+</p>
+
+<p>
+  <strong>Req credit self study:</strong>
+  <%= @state.req_credit_self_study %>
+</p>
+
+<p>
+  <strong>Req credit group live:</strong>
+  <%= @state.req_credit_group_live %>
+</p>
+
+<p>
+  <strong>Req credit group internet:</strong>
+  <%= @state.req_credit_group_internet %>
+</p>
+
+<%= link_to 'Edit', edit_state_path(@state) %> |
+<%= link_to 'Back', states_path %>

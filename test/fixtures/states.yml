@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  period_days: 1
+  req_credit_self_study: 1
+  req_credit_group_live: 1
+  req_credit_group_internet: 1
+
+two:
+  period_days: 1
+  req_credit_self_study: 1
+  req_credit_group_live: 1
+  req_credit_group_internet: 1

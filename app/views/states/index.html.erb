@@ -1,0 +1,33 @@
+<h1>Listing states</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Period days</th>
+      <th>Req credit self study</th>
+      <th>Req credit group live</th>
+      <th>Req credit group internet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @states.each do |state| %>
+      <tr>
+        <td><%= state.period_days %></td>
+        <td><%= state.req_credit_self_study %></td>
+        <td><%= state.req_credit_group_live %></td>
+        <td><%= state.req_credit_group_internet %></td>
+        <td><%= link_to 'Show', state %></td>
+        <td><%= link_to 'Edit', edit_state_path(state) %></td>
+        <td><%= link_to 'Destroy', state, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New State', new_state_path %>
