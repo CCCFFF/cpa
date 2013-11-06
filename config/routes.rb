@@ -1,4 +1,6 @@
 Cpa::Application.routes.draw do
+  resources :lic_periods
+
   resources :states
 
   # The priority is based upon order of creation: first created -> highest priority.

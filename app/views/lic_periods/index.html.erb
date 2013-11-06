@@ -1,0 +1,39 @@
+<h1>Listing lic_periods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Initial date</th>
+      <th>Renewal date</th>
+      <th>State</th>
+      <th>User</th>
+      <th>Credit self study total</th>
+      <th>Credit group live total</th>
+      <th>Credit group internet total</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lic_periods.each do |lic_period| %>
+      <tr>
+        <td><%= lic_period.initial_date %></td>
+        <td><%= lic_period.renewal_date %></td>
+        <td><%= lic_period.state_id %></td>
+        <td><%= lic_period.user_id %></td>
+        <td><%= lic_period.credit_self_study_total %></td>
+        <td><%= lic_period.credit_group_live_total %></td>
+        <td><%= lic_period.credit_group_internet_total %></td>
+        <td><%= link_to 'Show', lic_period %></td>
+        <td><%= link_to 'Edit', edit_lic_period_path(lic_period) %></td>
+        <td><%= link_to 'Destroy', lic_period, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lic period', new_lic_period_path %>

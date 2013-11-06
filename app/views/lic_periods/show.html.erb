@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Initial date:</strong>
+  <%= @lic_period.initial_date %>
+</p>
+
+<p>
+  <strong>Renewal date:</strong>
+  <%= @lic_period.renewal_date %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @lic_period.state_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @lic_period.user_id %>
+</p>
+
+<p>
+  <strong>Credit self study total:</strong>
+  <%= @lic_period.credit_self_study_total %>
+</p>
+
+<p>
+  <strong>Credit group live total:</strong>
+  <%= @lic_period.credit_group_live_total %>
+</p>
+
+<p>
+  <strong>Credit group internet total:</strong>
+  <%= @lic_period.credit_group_internet_total %>
+</p>
+
+<%= link_to 'Edit', edit_lic_period_path(@lic_period) %> |
+<%= link_to 'Back', lic_periods_path %>

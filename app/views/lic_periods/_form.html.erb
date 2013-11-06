@@ -1,0 +1,45 @@
+<%= form_for(@lic_period) do |f| %>
+  <% if @lic_period.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lic_period.errors.count, "error") %> prohibited this lic_period from being saved:</h2>
+
+      <ul>
+      <% @lic_period.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :initial_date %><br>
+    <%= f.date_select :initial_date %>
+  </div>
+  <div class="field">
+    <%= f.label :renewal_date %><br>
+    <%= f.date_select :renewal_date %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br>
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_self_study_total %><br>
+    <%= f.number_field :credit_self_study_total %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_group_live_total %><br>
+    <%= f.number_field :credit_group_live_total %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_group_internet_total %><br>
+    <%= f.number_field :credit_group_internet_total %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
