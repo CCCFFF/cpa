@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Credit category:</strong>
+  <%= @certificate.credit_category %>
+</p>
+
+<p>
+  <strong>Credit total:</strong>
+  <%= @certificate.credit_total %>
+</p>
+
+<p>
+  <strong>Credit date:</strong>
+  <%= @certificate.credit_date %>
+</p>
+
+<p>
+  <strong>Credit method:</strong>
+  <%= @certificate.credit_method %>
+</p>
+
+<%= link_to 'Edit', edit_certificate_path(@certificate) %> |
+<%= link_to 'Back', certificates_path %>

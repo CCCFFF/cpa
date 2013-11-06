@@ -1,4 +1,6 @@
 Cpa::Application.routes.draw do
+  resources :certificates
+
   resources :lic_periods
 
   resources :states

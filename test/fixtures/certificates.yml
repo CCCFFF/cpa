@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  credit_category: MyString
+  credit_total: 1
+  credit_date: 2013-11-05
+  credit_method: MyString
+
+two:
+  credit_category: MyString
+  credit_total: 1
+  credit_date: 2013-11-05
+  credit_method: MyString
