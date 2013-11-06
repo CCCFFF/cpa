@@ -69,6 +69,6 @@ class CertificatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def certificate_params
-      params.require(:certificate).permit(:credit_category, :credit_total, :credit_date, :credit_method)
+      params.require(:certificate).permit(:credit_category, :credit_total, :credit_date, :credit_method, :user_id)
     end
 end

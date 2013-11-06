@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :credit_category %><br>
-    <%= f.text_field :credit_category %>
+    <%= f.select :credit_category, options_for_select( ["Accounting and Auditing", "Consulting Services", "Ethics", "Management", "Personal Development", "Specialized Knowledge and Application", "Taxes"]) %>
   </div>
   <div class="field">
     <%= f.label :credit_total %><br>
@@ -25,7 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :credit_method %><br>
-    <%= f.text_field :credit_method %>
+    <%= f.select :credit_method, options_for_select(["Self Study", "Group Live", "Group Internet"]) %>
+  </div>
+  <div>
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
